@@ -20,7 +20,19 @@ class PartyCell: UITableViewCell {
     
     func updateUI(partyDrinks : PartyDrinks) {
         videoTitle.text = partyDrinks.videoTitle
-        //TODO : Set image from URL
+        
+        let url = URL(string: partyDrinks.imageURL)!
+        DispatchQueue.global().async {  //async is background thread
+            do {
+                let data = try Data(contentsOf: url)
+                DispatchQueue.global().sync {  //main user level thread
+                    self.videoPreviewImage.image = UIImage(data: data)
+                }
+            } catch let err as NSError {
+                print(err.debugDescription)
+            }
+        }
+        
     }
 
 }

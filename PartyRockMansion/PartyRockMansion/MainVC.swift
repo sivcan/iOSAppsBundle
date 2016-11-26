@@ -30,6 +30,10 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let p3 = PartyDrinks(imageURL: "https://splice-res.cloudinary.com/image/upload/f_auto,q_auto,w_auto/t_medium/f_auto/q_80/t_medium/v1464982583/rcqsznhboxmxyarordzq.jpg", videoURL: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ALZHF5UqnU4\" frameborder=\"0\" allowfullscreen></iframe>", videoTitle: "Marshmello - Alone")
         partyDrink.append(p3)
         
+        partyDrink.append(p2)
+        partyDrink.append(p1)
+        partyDrink.append(p3)
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,6 +51,20 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return cell
         } else {
             return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let partyDrinks = partyDrink[indexPath.row]
+        
+        performSegue(withIdentifier: "VideoVC", sender: partyDrinks)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? VideoVC {
+            if let party = sender as? PartyDrinks {
+                destination.partyDrink = party
+            }
         }
     }
     
