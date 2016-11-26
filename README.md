@@ -1,9 +1,11 @@
-#iOS Apps
+####iOS Apps
 This repository contains many iOS apps.
 
-#Developer 
+###Developer 
 Sivcan Singh 
 
-#Language 
+###Language 
 Swift 3 & Objective C
-Xcode 8 
+
+###Platform
+Xcode 8 (iOS 9+)
