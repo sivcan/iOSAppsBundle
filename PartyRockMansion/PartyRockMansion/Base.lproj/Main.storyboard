@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="PartyRockMansion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="xIm-Hp-vng">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="201" id="HDY-6y-y9F"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flamin' Drinks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8d-l3-B7S">
+                                <rect key="frame" x="16" y="170" width="186" height="32"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kus-JX-4ei">
+                                <rect key="frame" x="0.0" y="201" width="375" height="37"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="0Cd-l5-jj5">
+                                        <rect key="frame" x="8" y="3" width="359" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI4-Ob-Hgu">
+                                                <rect key="frame" x="0.0" y="0.0" width="105" height="32"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                <state key="normal" title="Top Videos">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvx-yh-vbX">
+                                                <rect key="frame" x="127" y="0.0" width="105" height="32"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                <state key="normal" title="Top Drinks">
+                                                    <color key="titleColor" red="0.16862745098039217" green="0.75294117647058822" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ct-uM-A00">
+                                                <rect key="frame" x="254" y="0.0" width="105" height="32"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                <state key="normal" title="Events">
+                                                    <color key="titleColor" red="0.16862745098039217" green="0.75294117647058822" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25490196078431371" green="0.2627450980392157" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0Cd-l5-jj5" secondAttribute="trailing" constant="8" id="52H-uP-x3f"/>
+                                    <constraint firstAttribute="height" constant="37" id="8y6-N5-gkA"/>
+                                    <constraint firstItem="0Cd-l5-jj5" firstAttribute="leading" secondItem="Kus-JX-4ei" secondAttribute="leading" constant="8" id="Evq-jZ-NzX"/>
+                                    <constraint firstItem="0Cd-l5-jj5" firstAttribute="top" secondItem="Kus-JX-4ei" secondAttribute="top" constant="3" id="xvT-j0-IDX"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="86" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X9w-Dv-3f2">
+                                <rect key="frame" x="0.0" y="238" width="375" height="429"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Drinker" rowHeight="86" id="MjE-hC-u4W" customClass="PartyCell" customModule="PartyRockMansion" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="86"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MjE-hC-u4W" id="VNK-iA-ebT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="partybanner" translatesAutoresizingMaskIntoConstraints="NO" id="eQE-SF-qFX">
+                                                    <rect key="frame" x="8" y="10" width="67" height="67"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="67" id="0Qe-Db-4ih"/>
+                                                        <constraint firstAttribute="width" constant="67" id="8hJ-eW-nyB"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bartenders gone crazy!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mt7-jV-TP8">
+                                                    <rect key="frame" x="83" y="33.5" width="284" height="20"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.31764705882352939" green="0.29019607843137252" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="eQE-SF-qFX" firstAttribute="leading" secondItem="VNK-iA-ebT" secondAttribute="leadingMargin" id="AfT-QH-bCv"/>
+                                                <constraint firstItem="mt7-jV-TP8" firstAttribute="centerY" secondItem="VNK-iA-ebT" secondAttribute="centerY" id="IV4-4M-Kp9"/>
+                                                <constraint firstItem="mt7-jV-TP8" firstAttribute="leading" secondItem="eQE-SF-qFX" secondAttribute="trailing" constant="8" id="R8b-VZ-vpC"/>
+                                                <constraint firstItem="eQE-SF-qFX" firstAttribute="top" secondItem="VNK-iA-ebT" secondAttribute="topMargin" constant="2" id="dJ1-ZI-uUK"/>
+                                                <constraint firstItem="mt7-jV-TP8" firstAttribute="trailing" secondItem="VNK-iA-ebT" secondAttribute="trailingMargin" id="eCK-dM-CSK"/>
+                                                <constraint firstItem="eQE-SF-qFX" firstAttribute="centerY" secondItem="VNK-iA-ebT" secondAttribute="centerY" id="yVj-RJ-V5a"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoPreviewImage" destination="eQE-SF-qFX" id="Ljo-B5-gHR"/>
+                                            <outlet property="videoTitle" destination="mt7-jV-TP8" id="63R-X1-wfD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kus-JX-4ei" firstAttribute="top" secondItem="xIm-Hp-vng" secondAttribute="bottom" id="3D3-Ig-G0N"/>
+                            <constraint firstAttribute="trailing" secondItem="xIm-Hp-vng" secondAttribute="trailing" id="A0U-ki-f5Q"/>
+                            <constraint firstAttribute="trailing" secondItem="X9w-Dv-3f2" secondAttribute="trailing" id="BIq-HL-LJG"/>
+                            <constraint firstItem="g8d-l3-B7S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="JYC-QX-oWK"/>
+                            <constraint firstItem="xIm-Hp-vng" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Pxg-Oz-DNj"/>
+                            <constraint firstItem="xIm-Hp-vng" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XP6-rW-cjb"/>
+                            <constraint firstItem="X9w-Dv-3f2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aku-Ch-pr9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X9w-Dv-3f2" secondAttribute="bottom" id="hqW-BJ-MOB"/>
+                            <constraint firstItem="X9w-Dv-3f2" firstAttribute="top" secondItem="Kus-JX-4ei" secondAttribute="bottom" id="sPo-Si-XQL"/>
+                            <constraint firstItem="Kus-JX-4ei" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tSF-dK-Mai"/>
+                            <constraint firstAttribute="trailing" secondItem="Kus-JX-4ei" secondAttribute="trailing" id="vlU-dN-H94"/>
+                            <constraint firstItem="g8d-l3-B7S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x6a-9E-Hzn"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="tableView" destination="X9w-Dv-3f2" id="ji2-Ic-hSY"/>
+                        <segue destination="uGH-iO-MQc" kind="showDetail" identifier="VideoVC" id="N4O-NH-MvF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="Rtf-Uf-7UC">
+            <objects>
+                <viewController id="uGH-iO-MQc" customClass="VideoVC" customModule="PartyRockMansion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RhG-CI-7QQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="LYH-gR-29K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jzm-Cj-Idm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hk4-CI-T21">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.31764705882352939" green="0.29019607843137252" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6EI-Ol-hto" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="partybanner" width="460" height="307"/>
+    </resources>
+</document>
