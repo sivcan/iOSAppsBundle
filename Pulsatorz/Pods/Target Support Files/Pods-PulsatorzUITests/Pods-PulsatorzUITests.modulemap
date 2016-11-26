@@ -1,0 +1,6 @@
+framework module Pods_PulsatorzUITests {
+  umbrella header "Pods-PulsatorzUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
