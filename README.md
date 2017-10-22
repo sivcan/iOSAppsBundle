@@ -1,11 +1,11 @@
-###iOS Apps
-This repository contains many iOS apps.
+# iOS Apps
+This repository contains many iOS apps that have been developed during the learning phase.
 
-###Developer 
+### Developer 
 Sivcan Singh 
 
-###Language 
+### Language 
 Swift 3 & Objective C
 
-###Platform
+### Platform
 Xcode 8 (iOS 9+)
